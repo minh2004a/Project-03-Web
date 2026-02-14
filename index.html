@@ -74,6 +74,7 @@
             sizes="16x16"
             href="./assets/favicon/favicon-16x16.png"
         />
+        <link rel="icon" href="./assets/favicon/favicon.ico" />
         <link rel="manifest" href="./assets/favicon/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta
@@ -91,7 +92,68 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body>
-        <h1>HI</h1>
+    <body style="height: 7000px">
+        <!-- Header -->
+        <header class="header fixed">
+            <div class="container">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#" class="logo__circle"></a>
+                        <a href="#" class="logo__text">
+                            <span class="logo__text--branch">Shine</span>
+                            <span class="logo__text--branch logo__text--small"
+                                >Smile</span
+                            >
+                        </a>
+                    </div>
+
+                    <!-- Navbar -->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a
+                                    href="#"
+                                    class="nav__link nav__link--active"
+                                    data-text="Home"
+                                >
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a
+                                    href="#"
+                                    class="nav__link"
+                                    data-text="Services"
+                                >
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" data-text="About">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a
+                                    href="#"
+                                    class="nav__link"
+                                    data-text="Doctors"
+                                >
+                                    Doctors
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Login & Signup -->
+                    <div class="action">
+                        <a href="#" class="action__btn action__btn--login"
+                            >Log In</a
+                        >
+                        <a href="#" class="btn action__btn">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
     </body>
 </html>
