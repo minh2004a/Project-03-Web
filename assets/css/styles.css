@@ -63,7 +63,7 @@ select {
     opacity: 0.9;
 }
 
-.heading.lv2 {
+.heading {
     color: var(--header-bg-color);
     text-align: center;
     font-size: 5rem;
@@ -351,7 +351,7 @@ select {
 }
 
 .services__icon-wrap {
-    background-color: #fff;
+    background-color: #eff6fd;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -366,8 +366,10 @@ select {
 }
 
 .services__item:hover {
+    position: relative;
     box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
 }
+
 .services__item:hover .services__icon-wrap,
 .services__item:hover .services__icon-wrap > .services__icon {
     background-color: var(--primary-color);
@@ -388,4 +390,120 @@ select {
 
 .services__btn {
     margin-top: 55px;
+}
+
+/* Works */
+.works {
+    margin-top: 120px;
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.work_top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.work__desc {
+    margin-top: 18px;
+    max-width: 468px;
+}
+
+.work-list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 46px;
+}
+
+.work-item {
+    background: #fff;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    padding: 42px;
+}
+
+.work-item__heading {
+    margin-top: 18px;
+    color: var(--header-bg-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    font-size: 1.6rem;
+}
+
+.work-item__link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #575f66;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.work-item:hover {
+    border-color: #2e80ce;
+    margin: -16px;
+    padding: 58px;
+    position: relative;
+}
+
+.work-item:hover .work-item__link {
+    color: #2e80ce;
+    font-weight: 400;
+}
+
+/* Features */
+.features {
+    margin-top: 120px;
+    padding: 50px 0;
+}
+
+.features-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-images {
+    display: flex;
+    width: 48.7%;
+}
+
+.features-images__img {
+    max-width: 512px;
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.features-images__img:last-child {
+    position: relative;
+    margin-top: 121px;
+    margin-left: -274px;
+    max-width: 332px;
+    width: 100%;
+    height: 370px;
+}
+
+.features-content {
+    max-width: 470px;
+    width: 100%;
+}
+
+.features-content__heading {
+    text-align: start;
+}
+
+.features-content_desc {
+    margin-top: 18px;
+}
+
+.features-content__btn {
+    margin-top: 38px;
 }
