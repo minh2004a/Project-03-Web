@@ -922,6 +922,16 @@ select {
     outline: 1px solid #406181;
 }
 
+.footer__input:-webkit-autofill,
+.footer__input:-webkit-autofill:hover,
+.footer__input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #9ca8b1;
+    -webkit-box-shadow: 0 0 0px 1000px #10375c inset;
+    transition: background-color 5000s ease-in-out 0s;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+}
+
 .footer__btn {
     cursor: pointer;
     min-width: 108px;
